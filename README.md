@@ -33,10 +33,10 @@ latte.get(cup) -- "table.tostring" and "printtable" now available
 
 
 local cup = {
-	name = "rxi's pure json.lua library",
-	source = "github",
-	author = "rxi",
-	ref = "json.lua",
+	name = "rxi's pure json.lua library", -- a "nice name"
+	source = "github", -- in this case, GitHub
+	author = "rxi", -- GitHub Author
+	ref = "json.lua", -- GitHub Repository Name
 	version = "eb6e343c53d25b24bfe0e05ecbb1d29297dfcb6d", -- DO NOT USE "master" HERE! currently doesn't check revision and, even when it does will be for development purposes only! do not execute code that could be changed not just due to breaking but the security implications.
 	files = {
 		{"json.lua", export_namespace="json"} -- export_namespace used so it uses "require". _G[cup.export_namespace] = require("thatcode")

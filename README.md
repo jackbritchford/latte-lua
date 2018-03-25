@@ -4,12 +4,12 @@ Loader for light Lua libraries/dependencies
 Still in development, feature suggestions/contributions/pull req's welcome.
 
 Requirements: 
-  HTTP Library, either:
-    - lua-requests
-    - lua-nginx-module (openresty)
-  Execution Rights:
-    - loadstring/load in Lua5.3/5.1
+  HTTP Library: lua-requests or lua-nginx-module (openresty)
+  Execution Rights: loadstring/load in Lua5.3/5.1
+If you've got an environment not immediately supported then write a "driver" for what's required.
 
+Optional:
+  LuaFFI: will be making more use of FFI bindings (especially for file libraries)
 
 Example from latte-example.lua
 ```lua
